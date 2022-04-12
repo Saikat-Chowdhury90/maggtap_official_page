@@ -45,6 +45,13 @@ body {
   overflow-x: hidden !important;
  
 }
+.spl img{
+  transform: scale(1) !important;
+}
+.spl:hover{
+  background-color: rgb(244, 244, 244) !important;
+ 
+}
 .app-rating{
   display: flex;
   width: 150px;
@@ -654,7 +661,7 @@ ul {
   background-color: white;
   padding: 4rem 4.4rem 2.8rem 4.4rem;
   border-radius: 2rem;
-  position: absolute;
+  position:relative;
   width: 34rem;
 }
 .blog__single-info h3 {
@@ -687,7 +694,7 @@ ul {
   transition: all 0.25s ease;
 }
 .blog__single:hover {
-  background-color: black;
+  background-color: rgb(215, 206, 206);
 }
 .blog__single:hover .blog__single-image img {
   -webkit-transform: scale(1.1);
@@ -1346,8 +1353,8 @@ ul {
   transition: all 0.25s ease;
   -webkit-transition-delay: 1s;
   transition-delay: 1s;
-  background: #ff00ae;
-  background: linear-gradient(45deg, #ff00ae 0%, #9100ff 50%, #ff00ae 100%);
+  background: #f1f2ff;
+  background: linear-gradient(45deg, #97e8f7 0%, #ffffff 50%, #4c0be3 100%);
   background-size: 200% 200%;
   background-position: left bottom;
   -webkit-animation-name: animateGradient;

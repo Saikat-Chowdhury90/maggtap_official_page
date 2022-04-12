@@ -58,6 +58,12 @@ body {
   margin-left: 55%;
   margin-top: 15px;
 }
+@media screen and (max-width:426px) {
+  .app-rating{
+    margin-left: 30%;
+  }
+  
+}
 svg{
   color: #ff8000;
   font-size: 0.8rem;
@@ -1760,6 +1766,29 @@ body.loaded .preloader {
   animation-duration: 2.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+@media (max-width:425px)
+{
+  .hero .hero-img::before {
+    display: none;
+  }
+  .spl-p{
+    margin-left: 0 !important;
+    text-align: left !important;
+    width: 100% !important;
+  }
+  .client .image img{
+    width: 190px !important;
+  }
+  .testimonial{
+    overflow: scroll;
+    height: 400px !important;
+  }
+  .testimonial p{
+    font-size:20px !important;
+    overflow: scroll !important;
+    margin-top: 15% !important;
+  }
 }
 @media (min-width: 991.98px) and (max-width: 1200px) {
   .hero__wrapper {

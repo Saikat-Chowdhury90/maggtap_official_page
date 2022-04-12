@@ -865,8 +865,14 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 3rem;
+  padding-left: 1rem;
   z-index: 0;
+}
+@media screen and (max-width:426px) {
+
+  .dropdown-wrapper .dropdown-info{
+    padding-left: 4.1rem;
+  }
 }
 .dropdown-wrapper .dropdown-info h6 {
   font-size: 1.8rem;
@@ -1484,6 +1490,12 @@ body.loaded .preloader {
   margin: 0;
   z-index: 100;
   position: relative;
+  
+}
+@media screen and (max-width:426px) {
+  .card img{
+    margin-left: 20%;
+  }
   
 }
 @media (min-width: 991.98px) {

@@ -201,6 +201,10 @@ $('.nav__dropdown-info').on('click', (e) => {
     let parentId = $(e.target).closest('li').attr('id');
     $(`#${parentId} > .nav__dropdown-box`).toggleClass('shown');
 });
+$('.nav__dropdown-info1').on('click', (e) => {
+    let parentId = $(e.target).closest('li').attr('id');
+    $(`#${parentId} > .nav__dropdown-box1`).toggleClass('shown');
+});
 
 /********************
 youtube defer

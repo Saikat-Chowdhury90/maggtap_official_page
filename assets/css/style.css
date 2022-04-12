@@ -37,6 +37,7 @@ html {
   font-size: 62.5%;
   overflow-x: hidden !important;
   letter-spacing: -0.2px;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -792,7 +793,9 @@ ul {
   background-color: white;
 }
 .dropdown-wrapper .dropdown-box.shown {
+
   top: 8.5rem;
+  position: relative;
   visibility: visible;
   opacity: 1;
 }
@@ -1432,6 +1435,10 @@ body.loaded .preloader {
   color: #666b6d;
   font-weight: 500 !important;
 }
+@media screen and (max-width:426px) {
+ 
+ 
+}
 @media (min-width: 991.98px) {
   .header__nav-primary > li > a {
     position: relative;
@@ -1468,6 +1475,17 @@ body.loaded .preloader {
   z-index: 100;
   position: relative;
 }
+ .nav__dropdown-info1 {
+  border: 0 !important;
+  width: auto;
+  height: auto;
+  border-radius: initial;
+  padding-left: 0;
+  margin: 0;
+  z-index: 100;
+  position: relative;
+  left: 18px;
+}
 @media (min-width: 991.98px) {
   .header__nav .nav__dropdown-info::after {
     content: "";
@@ -1478,8 +1496,22 @@ body.loaded .preloader {
     background-color: transparent;
     display: block;
   }
+  .nav__dropdown-info1::after {
+    content: "";
+    position: absolute;
+    bottom: -2rem;
+    width: 100%;
+    height: 2rem;
+    background-color: transparent;
+    display: block;
+  }
 }
 .header__nav .nav__dropdown-box {
+  width: 25rem;
+  display: block;
+  right: 0;
+}
+.header__nav .nav__dropdown-box1 {
   width: 25rem;
   display: block;
   right: 0;
@@ -1495,12 +1527,31 @@ body.loaded .preloader {
   transition: all 0.25s ease;
   display: block;
 }
+.header__nav .nav__dropdown-box1 li a {
+  font-size: 1.6rem;
+  color: #666b6d;
+  border-radius: 2rem;
+  position: relative;
+  padding: 1rem 0 1rem 2rem;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  display: block;
+}
 .header__nav .nav__dropdown-box li:hover a {
   color: #000;
   background-color: #f0f7fc;
   font-weight: 600;
 }
+.header__nav .nav__dropdown-box1 li:hover a {
+  color: #000;
+  background-color: #f0f7fc;
+  font-weight: 600;
+}
 .header__nav .nav__dropdown-box.shown {
+  top: 0;
+}
+.header__nav .nav__dropdown-box1.shown {
   top: 0;
 }
 @media (min-width: 991.98px) {
@@ -1509,9 +1560,21 @@ body.loaded .preloader {
     visibility: visible !important;
     opacity: 1 !important;
   }
+  .header__nav .nav__dropdown-box1.shown {
+    top: 0rem !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
 }
 @media (min-width: 991.98px) {
   .header__nav .nav__dropdown:hover .nav__dropdown-box {
+    top: 0rem !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-transform: translateY(5rem);
+    transform: translateY(5rem);
+  }
+  .header__nav .nav__dropdown:hover .nav__dropdown-box1 {
     top: 0rem !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -1663,7 +1726,22 @@ body.loaded .preloader {
     font-size: 1.8rem;
   }
   .header__nav .nav__dropdown-box.shown {
-    top: 2rem;
+    top: -5rem;
+  }
+  .header__nav .nav__dropdown-box1 {
+    position: absolute;
+    width: 100%;
+    border-radius: initial;
+    border: 0;
+  }
+  .header__nav .nav__dropdown-box1::before {
+    display: none;
+  }
+  .header__nav .nav__dropdown-box1 li a {
+    font-size: 1.8rem;
+  }
+  .header__nav .nav__dropdown-box1.shown {
+    top: -5rem;
   }
   .header__nav span {
     display: block;
@@ -1767,7 +1845,7 @@ body.loaded .preloader {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-@media (max-width:425px)
+@media (max-width:427px)
 {
   .hero .hero-img::before {
     display: none;
@@ -1778,7 +1856,7 @@ body.loaded .preloader {
     width: 100% !important;
   }
   .client .image img{
-    width: 190px !important;
+    width: 96% !important;
   }
   .testimonial{
     overflow: scroll;
@@ -1790,6 +1868,7 @@ body.loaded .preloader {
     margin-top: 15% !important;
   }
 }
+
 @media (min-width: 991.98px) and (max-width: 1200px) {
   .hero__wrapper {
     padding: 18.4rem 1rem 9.9rem 1rem;
@@ -1820,6 +1899,12 @@ body.loaded .preloader {
     margin-left: 0.5rem;
   }
 }
+@media (max-width: 991.98px){
+  .header__nav .nav__dropdown-box1.shown {
+    top: -5rem;
+}
+}
+
 @media (max-width: 991.98px) {
   .hero__wrapper {
     width: calc(100% - 5rem);

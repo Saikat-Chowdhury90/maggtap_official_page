@@ -111,7 +111,7 @@ header
       &-box{ position: absolute; width: 100%; border-radius: initial; border: 0;
         &::before{ display: none; }
         li{ a{ font-size: 1.8rem; } }
-        &.shown{ top: 2rem; }
+        &.shown{ top: -5rem; }
       }
     }
     span{ display: block; }

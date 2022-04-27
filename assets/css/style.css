@@ -46,6 +46,89 @@ body {
   overflow-x: hidden !important;
  
 }
+.member-content{
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 30rem;
+}
+.pyramid-mem{
+  position: relative;
+  left: 10%;
+
+}
+.mem-1{
+  position: absolute;
+  
+  width: 600px;
+  transform: scale(1);
+  z-index: 1;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+  border-radius: 5px;
+}
+.mem-2{
+  position: absolute;
+ 
+  left: 100px;
+  width: 600px;
+  height: 200px;
+  z-index: 2;
+  /* background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  border-radius: 5px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+  --swing: -25px;
+  --overlap: 25px;
+}
+.mem-3{
+  position: absolute;
+ 
+  left: 200px;
+  width: 600px;
+  height: 300px;
+  z-index: 5;
+  /* background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  border-radius: 5px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+}
+.mem-4{
+  position: absolute;
+ 
+  left: 300px;
+  width: 600px;
+  height: 200px;
+  z-index: 3;
+  /* background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  border-radius: 5px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+}
+.mem-5{
+  position: absolute;
+  
+  left: 400px;
+  width: 500px;
+  height: 100px;
+  z-index: 1;
+  /* background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat; */
+  border-radius: 5px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+}
 .spl img{
   transform: scale(1) !important;
 }
@@ -53,6 +136,77 @@ body {
   background-color: rgb(244, 244, 244) !important;
  
 }
+.mobile-content{
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  top: 5%;
+}
+.pyramid{
+  position: relative;
+  left: 50%;
+}
+.mob-1{
+  position: absolute;
+  
+  width: 600px;
+  height: 300px;
+  z-index: 1;
+  background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.mob-2{
+  position: absolute;
+  top: -40px;
+  left: 100px;
+  width: 600px;
+  height: 300px;
+  z-index: 2;
+  background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.mob-3{
+  position: absolute;
+  top: -80px;
+  left: 200px;
+  width: 600px;
+  height: 300px;
+  z-index: 5;
+  background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.mob-4{
+  position: absolute;
+  top: -40px;
+  left: 300px;
+  width: 600px;
+  height: 300px;
+  z-index: 3;
+  background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+.mob-5{
+  position: absolute;
+  
+  left: 400px;
+  width: 500px;
+  height: 300px;
+  z-index: 1;
+  background-image: url("../images/mob.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+
 .app-rating{
   display: flex;
   width: 150px;
@@ -1840,13 +1994,13 @@ body.loaded .preloader {
   margin: 0 auto;
   /* border-radius: 3rem; */
   background-color: #0087e8;
-  padding: 18.4rem 0 9.9rem 0;
+  padding: 11.4rem 0 13rem 0;
 }
 .hero .main-heading {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 600;
   color: white;
-  letter-spacing: -0.4rem;
+  /* letter-spacing: -0.4rem; */
   width: 150%;
   text-align: center;
   margin-left: 30%;
@@ -2056,7 +2210,7 @@ body.loaded .preloader {
 }
 .feature {
   width: 100vw;
-  padding: 15rem 0;
+  padding: 5rem 0;
 }
 .feature .section-heading {
   margin-bottom: 5rem;
@@ -3426,6 +3580,11 @@ body.loaded .preloader {
 .newsletter {
   width: 100vw;
 }
+.contact-heading{
+  font-size: 4.5rem;
+  margin-top: 60px;
+
+}
 .newsletter__wrapper {
   width: calc(100% - 10rem);
   margin: 0 auto;
@@ -3450,11 +3609,38 @@ body.loaded .preloader {
   width: 88%;
 }
 .newsletter__info--field {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 3rem;
+  margin-top: 3rem; */
+  margin-top: 2rem;
 }
+input, textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 2rem;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #2e04aa;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(6, 34, 247);
+}
+
 .newsletter__info button {
   width: 23.1rem;
   margin-left: 1rem;
@@ -3537,13 +3723,13 @@ body.loaded .preloader {
     bottom: initial;
   }
   .newsletter__info--field {
-    -webkit-box-orient: vertical;
+    /* -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+    align-items: center; */
   }
   .newsletter__info button {
     margin: 2rem auto 0 auto;
@@ -3558,6 +3744,7 @@ body.loaded .preloader {
   padding: 0 2rem 0 3rem;
   font-size: 1.6rem;
   color: #666b6d;
+   
 }
 .input-field::-webkit-input-placeholder {
   color: #666b6d;

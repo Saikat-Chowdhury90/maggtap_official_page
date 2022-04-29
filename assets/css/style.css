@@ -2187,7 +2187,7 @@ body.loaded .preloader {
     height: 100vh !important;
   }
   .hero .col-lg-6 {
-    height: auto;
+    height: 100vh;
   }
   .hero__wrapper {
     padding: 10rem 0;
@@ -3640,7 +3640,7 @@ body.loaded .preloader {
   .mobile-content{
     width: 100%;
     margin-left: -50%;
-   top: 18%;
+   top: 20%;
   }
   .mob-3{
     width: 170px;

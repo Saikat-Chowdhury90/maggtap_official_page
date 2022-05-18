@@ -3224,12 +3224,12 @@ body.loaded .preloader {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   background: #5f3a4a;
-  background: linear-gradient(45deg, #f2026b 0%, #ff8aaf 50%, #f2026b 100%);
+  background: linear-gradient(45deg, #c4e5ff 0%, #8aafff 50%, #1d2ffd 100%);
   background-size: 200% 200%;
   background-position: left bottom;
-  filter: drop-shadow(0px 5px 40px #f54590);
-  -webkit-filter: drop-shadow(0px 5px 40px #f54590);
-  -moz-filter: drop-shadow(0px 5px 40px #f54590);
+  filter: drop-shadow(0px 5px 40px #455ff5);
+  -webkit-filter: drop-shadow(0px 5px 40px #455ff5);
+  -moz-filter: drop-shadow(0px 5px 40px #455ff5);
   -webkit-animation-name: animateGradient;
   animation-name: animateGradient;
   -webkit-animation-duration: 2.5s;
@@ -3771,7 +3771,7 @@ body.loaded .preloader {
   margin-top: 2%;
 }
 .mtt{
-  margin-top: 14%;
+  margin-top: 10%;
 }
 .mtt5{
   margin-top: 2%;
@@ -3821,7 +3821,7 @@ input, textarea {
   box-sizing: border-box;
   font-size: 2rem;
   margin-left: 10%;
-  box-shadow: 4px 4px 4px 0px black;
+  box-shadow: 2px 2px 2px 0px black;
 }
 input,textarea::placeholder{
   text-align: center;
@@ -3829,7 +3829,7 @@ input,textarea::placeholder{
 
 input[type=submit] {
   width: 40%;
-  background-color: #2e04aa;
+  background-color: rgb(6, 34, 247);
   color: white;
   padding: 14px 20px;
   margin: 10px 0;
@@ -3840,7 +3840,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: rgb(6, 34, 247);
+  background-color: rgb(0, 17, 148);
 }
 
 .newsletter__info button {
@@ -3903,7 +3903,7 @@ input[type=submit]:hover {
   }
   .newsletter__wrapper {
     width: calc(100% - 5rem);
-    background-color: #fef2f6;
+    /* background-color: #fef2f6; */
     border-radius: 3rem;
     padding-top: 10rem;
     overflow: hidden;

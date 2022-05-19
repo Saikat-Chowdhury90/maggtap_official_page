@@ -3797,7 +3797,7 @@ body.loaded .preloader {
 
 .newsletter__info {
   position: relative;
-  padding:0px 10px 5px 10px;
+  padding:1px 10px 8px 10px;
   /* bottom: -4.6rem; */
 }
 .newsletter__info .section-heading {

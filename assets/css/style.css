@@ -3767,11 +3767,14 @@ body.loaded .preloader {
   gap: 25px;
   
 }
+.location div img{
+  margin-left: 20px;
+}
 .mttr{
   margin-top: 2%;
 }
 .mtt{
-  margin-top: 10%;
+  margin-top: 4%;
 }
 .mtt5{
   margin-top: 2%;
@@ -3780,6 +3783,7 @@ body.loaded .preloader {
   width: 50%;
   font-size: 1.5rem;
   text-align: left;
+  margin-left:20% ;
 }
 .newsletter__wrapper::before {
   content: "";

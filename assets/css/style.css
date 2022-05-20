@@ -3658,6 +3658,40 @@ body.loaded .preloader {
     background-color: transparent;
   }
 }
+.gradient-text {
+
+  background-color: rgb(199, 194, 194);
+  
+ 
+  background-image: linear-gradient(45deg, #100024, #4d1c9c,rgb(145, 61, 61),rgb(1, 8, 65));
+  
+  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.gradient-text-heading {
+
+  background-color: rgb(199, 194, 194);
+  
+ 
+  background-image: linear-gradient(45deg, #100024, #4d1c9c,rgb(1, 8, 65));
+  
+  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
 .related-blog .section-heading {
   text-align: center;
   margin: 0 auto 5rem auto;

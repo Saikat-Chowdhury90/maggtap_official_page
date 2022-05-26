@@ -2,6 +2,16 @@
 :root {
   --transform-fix: "none";
 }
+@keyframes zoom-out {
+
+  0%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+  
+}
 @-webkit-keyframes animateGradient {
   0% {
     background-position: left bottom;
@@ -144,65 +154,67 @@ body {
 }
 .pyramid{
   position: relative;
-  
-  left: 50%;
+  top: -400px;
+  left: 27.5%;
  
 }
 .mob-1{
   position: absolute;
   
-  width: 600px;
-  height: 300px;
+  width: 1200px;
+  height: 1500px;
   z-index: 1;
-  background-image: url("../images/mob.png");
+  background-image: url("../images/Left-01.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 5px;
+  top: 180px;
+  left: -200px;
 }
 .mob-2{
   position: absolute;
-  top: -40px;
-  left: 100px;
-  width: 600px;
-  height: 300px;
+  top: 220px;
+  left: -200px;
+  width: 1200px;
+  height: 1500px;
   z-index: 2;
-  background-image: url("../images/mob.png");
+  background-image: url("../images/Left-02.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 5px;
 }
 .mob-3{
   position: absolute;
-  top: -80px;
-  left: 200px;
-  width: 600px;
-  height: 300px;
+  top: 275px;
+  left: -190px;
+  width: 1200px;
+  height: 1800px;
   z-index: 5;
-  background-image: url("../images/mob.png");
+  background-image: url("../images/Center.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 5px;
 }
 .mob-4{
   position: absolute;
-  top: -40px;
-  left: 300px;
-  width: 600px;
-  height: 300px;
+  top: 140px;
+  left: -390px;
+  width: 1200px;
+  height: 1500px;
   z-index: 3;
-  background-image: url("../images/mob.png");
+  background-image: url("../images/Right01.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 5px;
 }
 .mob-5{
   position: absolute;
-  
-  left: 400px;
-  width: 500px;
-  height: 300px;
+  top: 270px;
+  left: 12px;
+  width: 1200px;
+  height: 1500px;
   z-index: 1;
-  background-image: url("../images/mob.png");
+  background-image: url("../images/Right02.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 5px;
@@ -1991,7 +2003,12 @@ body.loaded .preloader {
   width: 100vw;
   /* margin-top: 5rem; */
   overflow: hidden;
-  height: 100vh;
+  height: 133vh;
+  background-color: #0087e8;
+ 
+}
+.hero .container{
+  animation: zoom-out ease-in 3s;
 }
 .hero__wrapper {
   /* width: calc(100% - 10rem); */
@@ -2144,7 +2161,9 @@ body.loaded .preloader {
     margin-top: 15%;
   }
   
-  
+  .hero{
+    height: 90vh;
+  }
   
   .hero .main-heading {
     font-size: 6rem;

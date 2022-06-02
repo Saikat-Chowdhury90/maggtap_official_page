@@ -213,7 +213,7 @@ body {
   top: 275px;
   left: -190px;
   width: 1200px;
-  height: 1500px;
+  height: 1200px;
   z-index: 5;
   background-image: url("../images/new-home-ui-3.png");
   background-size: contain;
@@ -326,6 +326,16 @@ ul {
     width: 85%;
   }
   
+}
+@media (min-width:1030px) and (max-width:2500px){
+  
+  .hero{
+    height: 100vh !important;
+  }
+  .hero__wrapper{
+    height: 100vh !important;
+  }
+
 }
 @media (max-width: 575.98px) {
   .section-heading {
@@ -1802,9 +1812,6 @@ body.loaded .preloader {
 }
 @media (min-width:1024px) and (max-width: 1399px) {
 
-  .hero{
-    height:100vh !important;
-  }
  
   .main-heading{
     margin-top: 15%;
@@ -2042,8 +2049,12 @@ body.loaded .preloader {
   width: 100vw;
   /* margin-top: 5rem; */
   overflow: hidden;
-  height: 133vh !important;
+  height: 133vh;
   background-color: #0087e8;
+ 
+}
+@media (min-width:769px) and (max-width:1024px) {
+
  
 }
 /* .hero .container{
@@ -2067,7 +2078,7 @@ body.loaded .preloader {
   animation: fadeIn ease-in 5s;
 }
 .hero .main-heading p{
-  color: rgb(232, 191, 89);
+  color: #F41273;
   text-transform: uppercase;
  
 }
@@ -2084,12 +2095,15 @@ body.loaded .preloader {
   margin-left: 45em;
   width: 100%;
   animation: fadeIn 5s;
+  margin-top: 5%;
+  position: relative;
+  z-index:10;
 }
 .hero .download-buttons a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  
+  cursor: pointer;
 }
 .hero .download-buttons a:last-child {
   margin-left: 2rem;

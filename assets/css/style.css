@@ -337,6 +337,11 @@ ul {
   }
 
 }
+@media (min-width:769px) and (max-width:1024px) {
+
+ 
+  
+}
 @media (max-width: 575.98px) {
   .section-heading {
     font-size: 3rem;
@@ -4278,7 +4283,7 @@ input[type=submit]:hover {
   position: relative;
   height: 200px;
   width: 250px;
- 
+  cursor: pointer;
   border-radius: 40px;
   background: radial-gradient(white,white,rgb(187, 193, 250));
 }

@@ -231,8 +231,43 @@ function reveal() {
   window.addEventListener("scroll", reveal);
 
 
+  jQuery(document).ready(function($){
 
-
+    $('#icon-1').on({
+         'click': function(){
+             $('#mobile-chg').attr('src','assets/images/Online-Books.png');
+         }
+     });
+     
+    $('#icon-2').on({
+         'click': function(){
+             $('#mobile-chg').attr('src','assets/images/Video-Courses.png');
+         }
+     });
+     
+    $('#icon-3').on({
+         'click': function(){
+             $('#mobile-chg').attr('src','');
+         }
+     });
+     
+    $('#icon-5').on({
+         'click': function(){
+             $('#mobile-chg').attr('src','assets/images/Documents.png');
+         }
+     });
+     $('#icon-6').on({
+        'click': function(){
+            $('#mobile-chg').attr('src','assets/images/Image-Dictionary.png');
+        }
+    });
+    $('#icon-4').on({
+        'click': function(){
+            $('#mobile-chg').attr('src','assets/images/Visual-Quiz.png');
+        }
+    });
+    });
+    
 
 
 

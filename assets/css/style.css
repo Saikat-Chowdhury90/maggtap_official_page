@@ -964,9 +964,7 @@ ul {
   }
 }
 @media (max-width: 576px) {
-  .blog {
-    
-  }
+ 
 }
 .dropdown-wrapper {
   position: relative;
@@ -1798,6 +1796,17 @@ body.loaded .preloader {
   font-weight: 900 !important;
   cursor: pointer;
 }
+@media (min-width:1024px) and (max-width: 1399px) {
+
+  .hero{
+    height:100vh !important;
+  }
+ 
+  .main-heading{
+    margin-top: 15%;
+  }
+  
+}
 @media (min-width: 991.98px) and (max-width: 1126px) {
   .header__nav {
     margin-left: 0;
@@ -2029,7 +2038,7 @@ body.loaded .preloader {
   width: 100vw;
   /* margin-top: 5rem; */
   overflow: hidden;
-  height: 133vh;
+  height: 133vh !important;
   background-color: #0087e8;
  
 }
@@ -2290,7 +2299,7 @@ body.loaded .preloader {
     top: 0;
     left: 22.5%;
   }
-}
+
 @media (max-width: 575.98px) {
   .hero{
     height: 100vh !important;
@@ -3711,7 +3720,7 @@ body.loaded .preloader {
   background-color: rgb(199, 194, 194);
   
  
-  background-image: linear-gradient(45deg, #100024, #4d1c9c,rgb(145, 61, 61),rgb(1, 8, 65));
+  background-image: linear-gradient(#fe0ab9 50%, #4c0db3 50%);
   
   
   background-size: 100%;
@@ -3779,42 +3788,69 @@ body.loaded .preloader {
     top: 7% !important;
   }
 }
+
+@media screen and (width : 414px) {
+
+  .mobile-content{
+    width: 100%;
+    margin-left: 15% !important;
+    top: 29% !important ;
+    margin-top: -8%;
+  }
+  
+}
+@media screen and (width:412px) {
+
+  .mobile-content {
+    width: 100%;
+    margin-left: 14% !important;
+    top: 29% !important ;
+    margin-top: -8%;
+}
+  
+}
 @media screen and (max-width:425px) {
   .hero{
   
     overflow: hidden;
+    /* overflow: visible !important; */
+    height: 100vh !important;
   }
   .hero__wrapper{
     overflow: hidden;
+    /* overflow: visible !important; */
+    height: 100vh !important;
   }
   .mobile-content{
     width: 100%;
-    margin-left: -50%;
+    margin-left: 12%;
     top: 24%;
+    margin-top: -8%;
   }
   .mob-3{
-    width: 170px;
+    width: 600px;
    
-    left: 30%;
+    left: -65%;
   }
   .mob-1{
-    width: 170px;
-   
+    width: 600px;
+    margin-top: 15%;
+  
   }
   .mob-2{
-    width: 170px;
-    
-    left: 15%;
+    width: 600px;
+    margin-top: 7.5%;
+    left: -55%;
   }
   .mob-4{
-    width: 170px;
-   
-    left: 45%;
+    width: 600px;
+    margin-top: 18%;
+    left: -100%;
   }
   .mob-5{
-    width: 170px;
-  
-    left: 60%;
+    width: 600px;
+    margin-top: 3%;
+    left: -55%;
   }
 }
 .newsletter {
@@ -4205,4 +4241,66 @@ input[type=submit]:hover {
     margin-top: 4rem;
   }
 }
+
+
+
+.mob-img{
+  position: relative;
+  height: 500px;
+  width: 250px;
+  left: 38%;
+  margin-top: 10%;
+  
+}
+.mob-img img{
+  height: 500px;
+  width: 250px;
+}
+.icons{
+  position: relative;
+  height: 200px;
+  width: 200px;
+ 
+  border-radius: 20px;
+  background: radial-gradient(white,white,rgb(187, 193, 250));
+}
+.icons img{
+  position: relative;
+  height: 100px;
+  width: 100px;
+  left: 30%;
+  top: 20%;
+}
+.icons h3{
+  color: blue;
+  position: relative;
+  top: 30%;
+  text-align: center;
+  font-weight: bold;
+}
+.icons-1{
+  margin-top: 12%;
+  margin-left: -10%;
+}
+.icons-2{
+  margin-top: 34%;
+  margin-left: -17%;
+  
+}
+.icons-3{
+  margin-top: 58%;
+}
+.icons-4{
+  margin-top: 34%;
+  right: -23.6%;
+}
+.icons-5{
+  margin-top:12%;
+  right: -6%;
+}
+.icons-6{
+  margin-top: 58%;
+  right: 28%;
+}
+
 /*# sourceMappingURL=style.css.map */

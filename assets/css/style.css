@@ -2,6 +2,10 @@
 :root {
   --transform-fix: "none";
 }
+@font-face {
+  font-family: Bookman;
+  src: url("../../fonts/bookman-old-style.ttf");
+}
 @keyframes zoom-out {
 
   0%{
@@ -209,9 +213,9 @@ body {
   top: 275px;
   left: -190px;
   width: 1200px;
-  height: 1800px;
+  height: 1500px;
   z-index: 5;
-  background-image: url("../images/Center.png");
+  background-image: url("../images/new-home-ui-3.png");
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 5px;
@@ -4259,9 +4263,9 @@ input[type=submit]:hover {
 .icons{
   position: relative;
   height: 200px;
-  width: 200px;
+  width: 250px;
  
-  border-radius: 20px;
+  border-radius: 40px;
   background: radial-gradient(white,white,rgb(187, 193, 250));
 }
 .icons img{
@@ -4276,31 +4280,43 @@ input[type=submit]:hover {
   position: relative;
   top: 30%;
   text-align: center;
-  font-weight: bold;
+  font-weight: bolder;
+  font-family: "Bookman";
 }
 .icons-1{
-  margin-top: 12%;
-  margin-left: -10%;
+  margin-top: 10%;
+  margin-left: -15%;
 }
 .icons-2{
   margin-top: 34%;
-  margin-left: -17%;
+  margin-left: -21%;
   
 }
 .icons-3{
   margin-top: 58%;
+  left: -4%;
 }
 .icons-4{
   margin-top: 34%;
-  right: -23.6%;
+  right: -20%;
 }
 .icons-5{
-  margin-top:12%;
-  right: -6%;
+  margin-top:10%;
+  right: 1%;
 }
 .icons-6{
-  margin-top: 58%;
-  right: 28%;
+  margin-top: -17%;
+  right: -52%;
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
 }
 
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */

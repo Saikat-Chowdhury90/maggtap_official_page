@@ -172,7 +172,7 @@ body {
 .mobile-content{
   position: relative;
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 22rem;
   top: 5%;
 }
 .pyramid{
@@ -185,7 +185,7 @@ body {
   position: absolute;
   
   width: 1200px;
-  height: 1500px;
+  height: 787px;
   z-index: 1;
   background-image: url("../images/Left-01.png");
   background-size: contain;
@@ -200,7 +200,7 @@ body {
   top: 220px;
   left: -200px;
   width: 1200px;
-  height: 1500px;
+  height: 787px;
   z-index: 2;
   background-image: url("../images/Left-02.png");
   background-size: contain;
@@ -213,7 +213,7 @@ body {
   top: 275px;
   left: -190px;
   width: 1200px;
-  height: 1200px;
+  height: 787px;
   z-index: 5;
   background-image: url("../images/new-home-ui-3.png");
   background-size: contain;
@@ -226,7 +226,7 @@ body {
   top: 140px;
   left: -390px;
   width: 1200px;
-  height: 1500px;
+  height: 787px;
   z-index: 3;
   background-image: url("../images/Right01.png");
   background-size: contain;
@@ -239,7 +239,7 @@ body {
   top: 270px;
   left: 12px;
   width: 1200px;
-  height: 1500px;
+  height: 787px;
   z-index: 1;
   background-image: url("../images/Right02.png");
   background-size: contain;
@@ -340,9 +340,9 @@ ul {
   .hero{
     height: calc(100% - 1%) !important;
   }
-  .hero__wrapper{
-    height: calc(100%-50px)!important;
-  }
+  /* .hero__wrapper{
+    height: calc(100% - 50px)!important;
+  } */
 
 }
 @media (min-width:769px) and (max-width:1024px) {
@@ -1826,10 +1826,7 @@ body.loaded .preloader {
 @media (min-width:1024px) and (max-width: 1399px) {
 
  
-  .main-heading{
-    margin-top: 15%;
-  }
-  
+ 
 }
 @media (min-width: 991.98px) and (max-width: 1126px) {
   .header__nav {

@@ -3073,6 +3073,9 @@ body.loaded .preloader {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
+.c .image{
+  background: radial-gradient(white,pink);
+}
 .clients-sec .testimonial__wrapper .client .testimonial {
   position: absolute;
   top: 0;

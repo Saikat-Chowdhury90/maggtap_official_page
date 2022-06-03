@@ -302,8 +302,9 @@ ul {
 }
 .icon img{
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   width: 150px;
+  object-position: center;
 }
 
 .card img{
@@ -3066,7 +3067,7 @@ body.loaded .preloader {
 .clients-sec .testimonial__wrapper .client .image {
   cursor: pointer;
 }
-.clients-sec .testimonial__wrapper .client .image img {
+.clients-sec .testimonial__wrapper .client .image p {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   -webkit-transition: all 0.25s ease;
